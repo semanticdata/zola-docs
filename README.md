@@ -11,7 +11,7 @@
 
 Zola Docs is an easy way to create documentation for your project.
 
-Check out the [demo](https://zola-minimal.vercel.app/).
+Check out the [demo](https://semanticdata.github.io/zola-docs/).
 
 </div>
 
