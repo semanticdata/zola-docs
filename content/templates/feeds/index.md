@@ -48,7 +48,7 @@ You can enable posts autodiscovery modifying your blog `base.html` template addi
 
 ```html
 {% block rss %}
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{/* get_url(path="rss.xml", trailing_slash=false) */}}">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{/* get_url(path='rss.xml', trailing_slash=false) */}}">
 {% endblock %}
 ```
 

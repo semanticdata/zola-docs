@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+    <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}">
     {% if config.extra.favicon -%}
         {% set _favicon = config.extra.favicon -%}
         {% if (_favicon is starting_with("http")) == false -%}

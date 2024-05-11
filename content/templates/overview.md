@@ -123,7 +123,7 @@ If the path starts with `@/`, it will be treated as an internal
 link like the ones used in Markdown, starting from the root `content` directory.
 
 ```jinja2
-{% set url = get_url(path="@/blog/_index.md") %}
+{% set url = get_url(path='@/blog/_index.md') %}
 ```
 
 It accepts an optional parameter `lang` in order to compute a _language-aware URL_ in multilingual websites. Assuming `config.base_url` is `"http://example.com"`, the following snippet will:
@@ -133,21 +133,21 @@ It accepts an optional parameter `lang` in order to compute a _language-aware UR
 - fail otherwise, with the error message `"'en' is not an authorized language (check config.languages)."`
 
 ```jinja2
-{% set url = get_url(path="@/blog/_index.md", lang="en") %}
+{% set url = get_url(path='@/blog/_index.md', lang="en") %}
 ```
 
 This can also be used to get the permalinks for static assets, for example if
 we want to link to the file that is located at `static/css/app.css`:
 
 ```jinja2
-{{/* get_url(path="css/app.css") */}}
+{{/* get_url(path='css/app.css') */}}
 ```
 
 By default, assets will not have a trailing slash. You can force one by passing `trailing_slash=true` to the `get_url` function.
 An example is:
 
 ```jinja2
-{{/* get_url(path="css/app.css", trailing_slash=true) */}}
+{{/* get_url(path='css/app.css', trailing_slash=true) */}}
 ```
 
 In the case of non-internal links, you can also add a cachebust of the format `?h=<sha256>` at the end of a URL
@@ -164,7 +164,7 @@ Gets the hash digest for a static file. Supported hashes are SHA-256, SHA-384 (d
 This can be used to implement subresource integrity. Do note that subresource integrity is typically used when using external scripts, which `get_file_hash` does not support.
 
 ```jinja2
-<script src="{{/* get_url(path="js/app.js") */}}"
+<script src="{{/* get_url(path='js/app.js') */}}"
         integrity="sha384-{{/* get_file_hash(path="js/app.js", sha_type=384) */}}"></script>
 ```
 
