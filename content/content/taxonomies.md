@@ -24,7 +24,7 @@ Then at build time Zola can create pages for each taxonomy listing all of the kn
 
 Imagine again we have the following movies:
 
-```
+```markdown
 - Shape of water                   <--- Value
   - Director                         <--- Taxonomy
     - Guillermo Del Toro                 <--- Term
@@ -133,7 +133,7 @@ In a similar manner to how section and pages calculate their output path:
 
 The taxonomy pages are then available at the following paths:
 
-```plain
+```markdown
 $BASE_URL/$NAME/ (taxonomy)
 $BASE_URL/$NAME/$SLUG (taxonomy entry)
 ```

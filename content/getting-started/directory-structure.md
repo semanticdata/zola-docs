@@ -5,7 +5,7 @@ weight = 30
 
 After running `zola init`, you should see the following structure in your directory:
 
-```bash
+```sh
 .
 ├── config.toml
 ├── content

@@ -13,7 +13,7 @@ that for a specific command by running `zola <cmd> --help`.
 Creates the directory structure used by Zola at the given directory after asking a few basic configuration questions.
 Any choices made during these prompts can be easily changed by modifying `config.toml`.
 
-```bash
+```sh
 $ zola init my_site
 $ zola init
 ```
@@ -24,7 +24,7 @@ In case you want to attempt to populate a non-empty directory and are brave, you
 
 You can initialize a git repository and a Zola site directly from within a new folder:
 
-```bash
+```sh
 $ git init
 $ zola init
 ```
@@ -33,13 +33,13 @@ $ zola init
 
 This will build the whole site in the `public` directory (if this directory already exists, it is overwritten).
 
-```bash
+```sh
 $ zola build
 ```
 
 You can override the config `base_url` by passing a new URL to the `base-url` flag.
 
-```bash
+```sh
 $ zola build --base-url $DEPLOY_URL
 ```
 
@@ -48,19 +48,19 @@ deploy previews.
 
 You can override the default output directory `public` by passing another value to the `output-dir` flag.
 
-```bash
+```sh
 $ zola build --output-dir $DOCUMENT_ROOT
 ```
 
 You can point to a config file other than `config.toml` like so (note that the position of the `config` option is important):
 
-```bash
+```sh
 $ zola --config config.staging.toml build
 ```
 
 You can also process a project from a different directory with the `root` flag. If building a project 'out-of-tree' with the `root` flag, you may want to combine it with the `output-dir` flag. (Note that like `config`, the position is important):
 
-```bash
+```sh
 $ zola --root /path/to/project build
 ```
 
@@ -80,7 +80,7 @@ In the event you don't want Zola to run a local web server, you can use the `--w
 
 Before starting, Zola will delete the `public` directory to start from a clean slate.
 
-```bash
+```sh
 $ zola serve
 $ zola serve --port 2000
 $ zola serve --interface 0.0.0.0
@@ -99,7 +99,7 @@ fail to see your change or get an error, try restarting `zola serve`.
 
 You can also point to a config file other than `config.toml` like so (note that the position of the `config` option is important):
 
-```bash
+```sh
 $ zola --config config.staging.toml serve
 ```
 
