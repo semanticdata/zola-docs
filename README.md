@@ -1,28 +1,65 @@
-## An easy way to create a document library for your project
+<div align="center">
+<h1>📂 Zola Docs</h1>
+  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-minimal" />
+  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
+  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
+  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-minimal" />
+  <img src="https://img.shields.io/website/https/zola-minimal.vercel.app.svg" />
+</div>
 
-Demo: [https://easydocs.codeandmedia.com/](https://easydocs.codeandmedia.com/)
+<div align="center">
 
-This theme for [Zola](https://getzola.org) (static site engine) helps you build and publish your project docs easily and fast. Zola is just one binary that outputs html-pages and additional static assets after building your docs written in Markdown. Thus, you can take the theme, your md-files, Zola and gain flexible and simple website for documentation. 
+Zola Docs is an easy way to create documentation for your project.
 
-### Step-by-step
+Check out the [demo](https://zola-minimal.vercel.app/).
 
-As you may have heard Zola is quite flexible :) So, the scenario below is one of hundreds possible ways to make things done, feel free to find your best. Also, Zola provides their own mechanism to install and use themes, see [the docs](https://www.getzola.org/documentation/themes/installing-and-using-themes/). 
+</div>
 
-1. Fork the repo and replace demo-content inside content folder with yours. But take a look to _index.md files. It contains `title` and when you want to have anchor right of your headers add `insert_anchor_links = "right"` to each index. `theme.toml`, screenshot and readme may be deleted too. 
-2. Inside `config.toml` change URL and title on your own. In extra section you can specify path to your GitHub API for version below the logo on nav, favicon and logo itself. Or just remove the lines if you don't need it. Also, you can configure or turn on some additional settings related to Zola. [Specification is here](https://www.getzola.org/documentation/getting-started/configuration/).
-3. In sass/_variables.scss you may change font, color or background if you want.
-4. Almost done. Now, you should decide how you want to build and where will be hosted your website. You can build it locally and upload to somewhere. Or build in GitHub Actions and host on GitHub Pages / Netlify / CloudFlare Pages / AnyS3CloudStorage. [Howto for GitHub Pages](https://www.getzola.org/documentation/deployment/github-pages/). [My example](https://github.com/o365hq/o365hq.com/blob/main/.github/workflows/main.yml) of GitHub workflow with 2-steps build (the first checks for links and spelling errors, the second uploads to Azure). [Dockerfile](https://github.com/codeandmedia/zola_docsascode_theme/blob/master/Dockerfile) to make Docker image.
+![theme screenshot](screenshot.png)
 
-## Provided configurations options
+## 🚀 Quick Start
+
+Before using the theme, you need to install [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ v0.18.0.
+
+```sh
+# 1. Clone the repo
+git clone git@github.com:semanticdata/zola-docs.git
+
+# 2. Change directory into clone
+cd zola-docs
+
+# 3. Serve the site locally
+zola serve
+
+# 4. Open http://127.0.0.1:1111/ in the browser
+```
+
+For more detailed instructions, visit the [Documentation](https://www.getzola.org/documentation/themes/installing-and-using-themes/) page about installing and using themes.
+
+<!-- ## 🎨 Customization
+
+You can change the configuration, templates and content yourself. Refer to the [config.toml](config.toml), and [templates](templates) for ideas. In most cases you only need to modify the contents of [config.toml](config.toml) to customize the appearance of your blog. Make sure to visit the Zola [Documentation](https://www.getzola.org/documentation/getting-started/overview/).
+
+Adding custom CSS is as easy as adding your styles to [sass/_custom.scss](sass/_custom.scss). This is made possible because SCSS files are backwards compatible with CSS. This means you can type normal CSS code into a SCSS file and it will be valid.
+
+## 🚩 Reporting Issues
+
+We use GitHub Issues as the official bug tracker for **Minimal**. Please search [existing issues](https://github.com/semanticdata/zola-minimal/issues). It’s possible someone has already reported the same problem. If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-minimal/issues/new). -->
+
+## Notes on provided configuration options
 
 These options can be configured in the `extra` section of the [config.toml](config.toml).
-If any are not present it has the same behaviour as the default which is shown in the starter [config.toml](config.toml).
 
-- **easydocs_logo_always_clickable** controls if the logo is always clickable. By default the logo is only clickable if you are not on the home page. If this is enabled it will make the logo clickable when you are on the home page as well. Thus on the home page it will basically just refresh the page as it will take you to the same page.
-- **easydocs_uglyurls** provides support for offline sites that do not use a webserver. If set to true links in the nav are generated with the full path indcluding `index.html`. This functionality was  insired by [Abridge theme](https://www.getzola.org/themes/abridge/). Note that for this to work it also requries the base URL to be set to the local folder where the site will be stored eg. `base_url = file:///home/user/mysite/public/`. Therefore this is not portable and only works with a specific local folder, but does not require a webserver to navigate the site.
-- **easydocs_heading_threshold** controls minimum number of headings needed on a page before the headings show in the navigation on the left. Defaults to 5. Can be used for example to always show headings on each page by setting it to 1.
+- The `easydocs_logo_always_clickable` option controls whether the logo is always clickable, even when on the home page. By default, it is only clickable when not on the home page. If this is enabled, the logo will be clickable on the home page as well, refreshing the page.
+- The `easydocs_uglyurls` option provides support for offline sites that do not use a webserver. If set to `true`, links in the nav are generated with the full path including `index.html`. This functionality was inspired by the [Abridge theme](https://www.getzola.org/themes/abridge/). Note that for this to work, it also requires the `base_url` to be set to the local folder where the site will be stored, e.g. `base_url = file:///home/user/mysite/public/`. Therefore this is not portable and only works with a specific local folder, but does not require a webserver to navigate the site.
+- The `easydocs_heading_threshold` option controls the minimum number of headings needed on a page before headings show in the navigation on the left. The default is 5. This can be used to always show headings on each page by setting it to 1.
 
-Enjoy your docs!
+## 💜 Acknowledgements
 
-* _Icons: [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/)_
-* _Copy-code-button: [Aaron Luna](https://aaronluna.dev/blog/add-copy-button-to-code-blocks-hugo-chroma/)_
+- Zola Docs is a fork of [Zola Easydocs](https://github.com/codeandmedia/zola_easydocs_theme).
+- Icons used: [Office UI Fabric Icons](https://uifabricicons.azurewebsites.net/).
+- Copy-code-button: [Aaron Luna](https://aaronluna.dev/blog/add-copy-button-to-code-blocks-hugo-chroma/).
+
+## © License
+
+Source code in this repository is available under the [MIT License](LICENSE).
