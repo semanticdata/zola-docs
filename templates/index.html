@@ -1,20 +1,9 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="{{ get_url(path='main.css') | safe }}">
-    {% if config.extra.favicon -%}
-        {% set _favicon = config.extra.favicon -%}
-        {% if (_favicon is starting_with("http")) == false -%}
-            {% set _favicon = get_url(path=config.extra.favicon) -%}
-        {% endif -%}
-        <link rel="icon" href="{{ _favicon | safe }}">
-    {% endif -%}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
-</head>
-<body>
+<html lang="en">
 
+{% include "partials/head.html" %}
+
+<body>
 {% if config.extra.release -%}
     <script>
         fetch('{{ config.extra.release | safe }}')
