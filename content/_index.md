@@ -1,6 +1,6 @@
 +++
 title = "index"
-insert_anchor_links = "right"
+# insert_anchor_links = "none"
 +++
 
 ## An easy way to create a document library for your project

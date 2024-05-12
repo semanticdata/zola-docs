@@ -1,13 +1,11 @@
 <div align="center">
 <h1>📂 Zola Docs</h1>
-  <img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-minimal" />
-  <img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
-  <img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
-  <img src="https://img.shields.io/github/last-commit/semanticdata/zola-minimal" />
-  <img src="https://img.shields.io/website/https/zola-minimal.vercel.app.svg" />
-</div>
 
-<div align="center">
+<img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-minimal" />
+<img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
+<img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
+<img src="https://img.shields.io/github/last-commit/semanticdata/zola-minimal" />
+<img src="https://img.shields.io/website/https/zola-minimal.vercel.app.svg" />
 
 Zola Docs is an easy way to create documentation for your project.
 
