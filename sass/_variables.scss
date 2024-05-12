@@ -1,5 +1,14 @@
 $baseline: 1.5rem;
 
+$space-xs: 0.25rem;
+$space-sm: 0.5rem;
+$space-md: 1rem;
+$space-lg: 2rem;
+$space-xl: 4rem;
+
+$page-width: 80ch;
+$nav-width: 40ch;
+
 $background: #f9f9f9;
 $color: #222;
 
@@ -23,3 +32,8 @@ $code_font:
 
 $quote-bg: #dcdcdc;
 $quote-border: #808080 8px solid;
+
+$breakpoint-xs: 400px;
+$breakpoint-sm: 600px;
+$breakpoint-md: 800px;
+$breakpoint-lg: 1200px;

@@ -1,5 +1,9 @@
 @import "variables";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-kerning: normal;
   text-rendering: optimizeLegibility;
@@ -7,7 +11,7 @@ html {
 }
 
 body {
-  margin: $baseline 0;
+  // margin: $baseline 0;
   font-size: $font-size;
   font-family: $font-family;
   line-height: $line-height;
@@ -51,7 +55,7 @@ h4 {
     visibility: hidden;
     text-decoration: none;
     cursor: pointer;
-    line-height: 1;
+    // line-height: 1;
     color: $color;
   }
 
@@ -117,47 +121,48 @@ pre:hover .copy-code-button {
 }
 
 nav {
-  position: sticky;
-  height: 92vh;
-  top: $baseline;
-  left: $baseline;
-  bottom: $baseline;
-  padding-right: $baseline;
-  width: 20rem;
+  // position: sticky;
+  // height: 92vh;
+  // height: 98vh;
+  // top: $baseline;
+  // left: $baseline;
+  // bottom: $baseline;
+  // padding-right: $baseline;
+  // width: 20rem;
 
   img {
-    width: 128px;
+    // width: 128px;
   }
 
   h1 {
-    margin: 0;
-    line-height: 1;
+    // margin: 0;
+    // line-height: 1;
   }
 }
 
 #toc {
-  margin-left: calc(#{$baseline} + #{$font-size});
-  padding: 0;
-  margin: 0 0 0 $baseline;
-  font-size: 80%;
+  // margin-inline-end: $space-xs;
+  // padding: 0;
+  // margin: 0 0 0 $baseline;
+  // font-size: 80%;
 
   li {
     color: $color;
-    margin-left: $font-size;
+    // margin: 0;
+    // padding: 0;
 
     &::before {
       display: inline-block;
-      content: "";
     }
 
     ul {
-      padding: 0;
+      padding-inline-start: $space-md;
     }
   }
 }
 
 main {
-  display: flex;
+  // display: flex;
   flex-flow: row nowrap;
   animation: fade-in 0.4s ease-in-out;
 }
@@ -201,19 +206,23 @@ nav label {
 
 #trees {
   overflow-y: auto;
-  height: 80%;
+  // height: 80%;
+  // border: 1px solid $color;
 }
 
 .subtree {
   overflow: hidden;
-  margin: calc(#{$baseline} / 8) 0;
+  // margin: calc(#{$baseline} / 8) 0;
   transition: overflow 0.2s ease-in-out;
-  padding: 0;
+  // border: 1px solid $color;
+  // padding: 0;
 }
 
 .tree-toggle-label {
   user-select: none;
   cursor: pointer;
+  // border: 1px solid $color;
+  padding: 0;
 }
 
 .tree-toggle-label::before {
@@ -224,7 +233,7 @@ nav label {
   transform: rotate(0deg);
   transform-origin: 50% 50% 0px;
   transition: transform 0.1s linear 0s;
-  margin-right: 2px;
+  margin-inline-end: $space-xs;
 }
 
 .tree-toggle {
@@ -240,7 +249,6 @@ nav label {
   transform: rotate(90deg);
   transform-origin: 50% 50% 0px;
   transition: transform 0.1s linear 0s;
-  margin-right: 2px;
 }
 
 .tree-toggle:checked + .tree-toggle-label {
@@ -261,7 +269,7 @@ nav label {
 
 .subtree li {
   list-style-type: none;
-  margin-left: $baseline;
+  // margin-left: $baseline;
 
   a {
     color: $color;
@@ -271,6 +279,7 @@ nav label {
     content: "\E7C3";
     font-family: "FabricMDL2Icons";
     font-size: 0.75rem;
+    margin-inline-end: $space-xs;
   }
 }
 
@@ -279,11 +288,12 @@ nav label {
 }
 
 article {
-  width: calc(100% - (#{$baseline} * 4 + 20rem));
-  margin-left: calc(#{$baseline} * 2);
+  // width: calc(100% - (#{$baseline} * 4 + 20rem));
+  // width: calc(100% - (#{$baseline} * 4 + 40rem));
+  // margin-left: calc(#{$baseline} * 2);
 
   img {
-    max-width: 100%;
+    // max-width: 100%;
   }
 }
 
@@ -291,21 +301,21 @@ article {
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoint-lg) {
   main {
     flex-flow: column nowrap;
-    width: 100%;
+    // width: 100%;
   }
 
   nav {
     position: inherit;
     height: auto;
-    margin: $baseline $baseline 0 $baseline;
+    // margin: $baseline $baseline 0 $baseline;
   }
 
   article {
-    width: calc(100% - (#{$baseline} * 2));
-    margin: 0 $baseline;
+    // width: calc(100% - (#{$baseline} * 2));
+    // margin: 0 $baseline;
     z-index: 1;
   }
 
@@ -313,7 +323,7 @@ article {
     font-family: "FabricMDL2Icons";
     cursor: pointer;
     font-size: $baseline;
-    margin: 0 $baseline 0 0;
+    // margin: 0 $baseline 0 0;
     display: block;
     color: $color;
   }
@@ -329,16 +339,17 @@ article {
   }
 
   #on_right {
-    margin-top: $baseline;
+    // margin-top: $baseline;
   }
 }
 
 blockquote {
   border-left: $quote-border;
-  margin: 0;
   background-color: $quote-bg;
-  padding: 0 20px;
+  // padding: 0 20px;
+  // margin: 0;
 }
 
 @import "fabric-icons-inline";
 @import "search";
+@import "custom";

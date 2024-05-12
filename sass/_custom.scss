@@ -1,1 +1,97 @@
 /* Write your custom CSS here */
+@import "variables";
+
+html,
+body,
+main,
+nav,
+article {
+    // border: red 1px solid;
+}
+
+html {
+    // background-color: palegoldenrod;
+    // border-color: purple;
+    // min-width: 100vw;
+    // padding: 0;
+    // margin: 0;
+}
+body {
+    // background-color: palegreen;
+    margin: $space-sm;
+    // padding: 0;
+    // border-color: maroon;
+    // background-color: orange;
+    // min-width: 100vw;
+    // margin-inline: auto;
+}
+main {
+    // background-color: paleturquoise;
+    // border-color: green;
+    // flex-direction: row;
+    // margin-inline: auto;
+    display: flex;
+    justify-content: center;
+}
+nav {
+    // background-color: palegoldenrod;
+    max-height: calc(100vh - $space-lg);
+    padding: $space-md;
+    width: $nav-width;
+    position: sticky;
+    top: $space-sm;
+}
+nav label {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: start;
+}
+article {
+    // background-color: paleturquoise;
+    // flex-grow: 1;
+    padding: $space-md;
+    // border-color: blue;
+    max-width: $page-width;
+}
+
+.subtree {
+    margin: 0;
+    padding-inline-start: $space-sm;
+}
+
+// .subtree li {
+//     // list-style-type: none;
+//     // margin: 0;
+//     // padding: 0;
+
+//     a {
+//         color: $color;
+//     }
+
+//     &::before {
+//         content: "\E7C3";
+//         font-family: "FabricMDL2Icons";
+//         font-size: 0.75rem;
+//     }
+// }
+
+#toc {
+    // margin-left: $space-xs;
+    margin-inline-start: $space-sm;
+    padding-inline-start: $space-sm;
+    // margin: 0 0 0 $baseline;
+    // font-size: 80%;
+
+    li {
+        // color: $color;
+        // margin-inline-end: $space-xs;
+
+        &::before {
+            display: inline-block;
+        }
+
+        ul {
+            // padding: 0;
+        }
+    }
+}
