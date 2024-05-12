@@ -47,15 +47,13 @@
 }
 
 #on_right {
-  // display: inline-block;
-  // text-align: right;
-  // margin-bottom: $baseline;
-  // border: 1px solid $color;
+  text-align: left;
+  border-radius: $space-sm;
 }
 
 #search-ico {
-  // font-family: "FabricMDL2Icons";
-  // cursor: pointer;
-  // font-size: 1.5rem;
-  // line-height: 1;
+  font-family: "FabricMDL2Icons";
+  cursor: pointer;
+  padding-inline: 1rem;
+  font-size: 1.5rem;
 }

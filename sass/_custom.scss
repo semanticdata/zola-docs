@@ -10,31 +10,15 @@ article {
 }
 
 html {
-    // background-color: palegoldenrod;
-    // border-color: purple;
-    // min-width: 100vw;
-    // padding: 0;
-    // margin: 0;
 }
 body {
-    // background-color: palegreen;
     margin: $space-sm;
-    // padding: 0;
-    // border-color: maroon;
-    // background-color: orange;
-    // min-width: 100vw;
-    // margin-inline: auto;
 }
 main {
-    // background-color: paleturquoise;
-    // border-color: green;
-    // flex-direction: row;
-    // margin-inline: auto;
     display: flex;
     justify-content: center;
 }
 nav {
-    // background-color: palegoldenrod;
     max-height: calc(100vh - $space-lg);
     padding: $space-md;
     width: $nav-width;
@@ -42,15 +26,9 @@ nav {
     top: $space-sm;
 }
 nav label {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: start;
 }
 article {
-    // background-color: paleturquoise;
-    // flex-grow: 1;
     padding: $space-md;
-    // border-color: blue;
     max-width: $page-width;
 }
 
@@ -59,46 +37,12 @@ article {
     padding-inline-start: $space-sm;
 }
 
-// .subtree li {
-//     // list-style-type: none;
-//     // margin: 0;
-//     // padding: 0;
-
-//     a {
-//         color: $color;
-//     }
-
-//     &::before {
-//         content: "\E7C3";
-//         font-family: "FabricMDL2Icons";
-//         font-size: 0.75rem;
-//     }
-// }
-
 #toc {
-    // margin-left: $space-xs;
     margin-inline-start: $space-sm;
     padding-inline-start: $space-sm;
-    // margin: 0 0 0 $baseline;
     // font-size: 80%;
-
-    li {
-        // color: $color;
-        // margin-inline-end: $space-xs;
-
-        &::before {
-            display: inline-block;
-        }
-
-        ul {
-            // padding: 0;
-        }
-    }
 }
 
-img {
-    // border: 1px solid $color;
-}
 .logo {
     padding-block: $space-md;
 }
@@ -107,22 +51,4 @@ img {
     flex-direction: column;
     width: 80%;
     // border: 1px solid $color;
-}
-#on_right {
-    text-align: left;
-    // margin-bottom: $baseline;
-    // border: 1px solid $color;
-    border-radius: $space-sm;
-}
-
-#search-ico {
-    // border: 1px solid $color;
-    //   display: inline-flex;
-    //   flex-grow: 1;
-    //   background: palevioletred;
-    font-family: "FabricMDL2Icons";
-    cursor: pointer;
-    padding-inline: 1rem;
-    font-size: 1.5rem;
-    // line-height: 1;
 }
