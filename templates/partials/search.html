@@ -1,0 +1,12 @@
+{% if config.build_search_index -%}
+<form id="on_right">
+    <span id="search-ico" class="ms-Icon--Search"></span>
+</form>
+<div class="search-container">
+    <input id="search" type="search" placeholder="Search as you type...">
+    <div class="search-results">
+        <div class="search-results__header"></div>
+        <ul class="search-results__items"></ul>
+    </div>
+</div>
+{% endif -%}

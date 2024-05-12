@@ -95,3 +95,34 @@ article {
         }
     }
 }
+
+img {
+    // border: 1px solid $color;
+}
+.logo {
+    padding-block: $space-md;
+}
+.site-title {
+    display: inline-flex;
+    flex-direction: column;
+    width: 80%;
+    // border: 1px solid $color;
+}
+#on_right {
+    text-align: left;
+    // margin-bottom: $baseline;
+    // border: 1px solid $color;
+    border-radius: $space-sm;
+}
+
+#search-ico {
+    // border: 1px solid $color;
+    //   display: inline-flex;
+    //   flex-grow: 1;
+    //   background: palevioletred;
+    font-family: "FabricMDL2Icons";
+    cursor: pointer;
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    // line-height: 1;
+}

@@ -28,13 +28,14 @@
 
     {%- block nav -%}
         <nav>
+            <div class="site-title">
             {% if config.extra.logo -%}
                 {% set _logo = config.extra.logo -%}
                 {% if (_logo is starting_with("http")) == false -%}
                     {% set _logo = get_url(path=config.extra.logo) -%}
                 {% endif -%}
                 {% if current_path == "/" and not config.extra.easydocs_logo_always_clickable -%}
-                    <img src="{{ _logo | safe }}" alt="logo"/>
+                    <img class="logo" src="{{ _logo | safe }}" alt="logo" width="128px" />
                 {% else -%}
                     <a href="{{ config.base_url }}{{ _ugly_url }}">
                         <img src="{{ _logo | safe }}" alt="logo"/>
@@ -44,6 +45,10 @@
             {% else -%}
                 <h1><a href="{{ config.base_url }}{{ _ugly_url }}">{{ config.title }}</a></h1>
             {% endif -%}
+
+            {% include "partials/search.html" %}
+
+            </div>
 
             {% if config.extra.release -%}
                 <div id="release"></div>
@@ -122,7 +127,7 @@
 
     <article>
 
-        {% if config.build_search_index -%}
+        {# {% if config.build_search_index -%}
             <div id="on_right">
                 <span id="search-ico" class="ms-Icon--Search"></span>
             </div>
@@ -133,7 +138,7 @@
                     <ul class="search-results__items"></ul>
                 </div>
             </div>
-        {% endif -%}
+        {% endif -%} #}
 
         <div id="wrap">
             {% block content -%}
