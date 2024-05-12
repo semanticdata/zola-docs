@@ -31,7 +31,12 @@ article {
     padding: $space-md;
     max-width: $page-width;
 }
-
+blockquote {
+    border-left: $quote-border;
+    background-color: $quote-bg;
+    padding: $space-xs $space-lg;
+    margin-inline: $space-lg;
+}
 .subtree {
     margin: 0;
     padding-inline-start: $space-sm;
@@ -50,5 +55,4 @@ article {
     display: inline-flex;
     flex-direction: column;
     width: 80%;
-    // border: 1px solid $color;
 }

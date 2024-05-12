@@ -68,20 +68,30 @@ h4 {
   }
 }
 
-table td,
-table th {
+table {
+  width: 100%;
+  margin: $space-lg auto;
+  border-collapse: collapse;
+}
+table thead th,
+table tfoot th {
+  background: #00000010;
+}
+table th,
+table td {
+  padding: 2px;
   border: 1px solid $color;
 }
 
 pre {
-  margin: $baseline 0;
-  border-radius: 4px;
-  padding: $baseline;
+  border-radius: 0.2rem;
+  background-color: #00000025;
   overflow: auto;
-  position: relative;
+  overflow-x: auto;
 
   code {
     background: transparent;
+    border: 0;
 
     &::after {
       content: attr(data-lang);
@@ -95,9 +105,14 @@ pre {
     }
   }
 }
-
 code {
   font: $code_font;
+  padding: 1px 2px;
+  text-wrap: pretty;
+}
+pre,
+code {
+  border: 1px solid $color;
 }
 
 .copy-code-button {
@@ -280,18 +295,14 @@ article {
 @media screen and (max-width: $breakpoint-lg) {
   main {
     flex-flow: column nowrap;
-    // width: 100%;
   }
 
   nav {
     position: inherit;
     height: auto;
-    // margin: $baseline $baseline 0 $baseline;
   }
 
   article {
-    // width: calc(100% - (#{$baseline} * 2));
-    // margin: 0 $baseline;
     z-index: 1;
   }
 
@@ -306,22 +317,18 @@ article {
 
   #trees {
     display: none;
-    position: absolute;
+    // position: absolute;
     background: $background;
     height: auto;
     width: 100vw;
     z-index: 10;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid $color;
   }
 
   #on_right {
     margin-top: $baseline;
   }
-}
-
-blockquote {
-  border-left: $quote-border;
-  background-color: $quote-bg;
 }
 
 @import "fabric-icons-inline";
