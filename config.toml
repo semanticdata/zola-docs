@@ -10,8 +10,9 @@ highlight_theme = "base16-ocean-light"
 
 [extra]
 logo = "https://easydocs.codeandmedia.com/logo.svg"
-release = "https://api.github.com/repos/getzola/zola/releases/latest"
-favicon = "https://www.getzola.org/favicon.ico"
+# release = "https://api.github.com/repos/getzola/zola/releases/latest"
+# favicon = "https://www.getzola.org/favicon.ico"
+favicon = "https://forgetfulnotes.com/static/icon2.png"
 easydocs_logo_always_clickable = false
 # For use with offline sites. If set to true links in the nav are generated with the full path indcluding index.html
 # Insired by Abridge theme https://www.getzola.org/themes/abridge/
