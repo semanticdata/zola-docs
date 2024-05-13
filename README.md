@@ -52,11 +52,11 @@ These options can be configured in the `extra` section of the [config.toml](conf
 - The `easydocs_uglyurls` option provides support for offline sites that do not use a webserver. If set to `true`, links in the nav are generated with the full path including `index.html`. This functionality was inspired by the [Abridge theme](https://www.getzola.org/themes/abridge/). Note that for this to work, it also requires the `base_url` to be set to the local folder where the site will be stored, e.g. `base_url = file:///home/user/mysite/public/`. Therefore this is not portable and only works with a specific local folder, but does not require a webserver to navigate the site.
 - The `easydocs_heading_threshold` option controls the minimum number of headings needed on a page before headings show in the navigation on the left. The default is 5. This can be used to always show headings on each page by setting it to 1.
 
-<!--
 ## 🔄 Changes from Upstream
 
-- Placeholder
--->
+- Refactored stylesheets.
+- Added partials templates
+- Added test and deployment workflows.
 
 ## 💜 Acknowledgements
 
