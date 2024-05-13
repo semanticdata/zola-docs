@@ -7,7 +7,7 @@ Zola uses the directory structure to determine the site structure.
 Each child directory in the `content` directory represents a [section](@/content/section.md)
 that contains [pages](@/content/page.md) (your `.md` files).
 
-```sh
+```shell
 .
 └── content
     ├── content
@@ -47,7 +47,7 @@ built, which allows us to use a relative path to access them.
 Pages with co-located assets should not be placed directly in their section directory (such as `latest-experiment.md`), but
 as an `index.md` file in a dedicated directory (`latest-experiment/index.md`), like so:
 
-```sh
+```shell
 └── research
     ├── latest-experiment
     │   ├── index.md
@@ -92,7 +92,7 @@ into the static directory.
 Note that the static directory provides an _alternative_ to co-location. For example, imagine that you
 had the following directory structure (a simplified version of the structure presented above):
 
-```sh
+```shell
 .
 └── content
     └── blog

@@ -17,7 +17,7 @@ Zola processes any files with the `sass` or `scss` extension in the `sass`
 folder, and places the processed output into a `css` file with the same folder
 structure and base name into the `public` folder:
 
-```sh
+```shell
 .
 └── sass
     ├── style.scss // -> ./public/style.css

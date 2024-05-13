@@ -19,7 +19,7 @@ Check out the [demo](https://semanticdata.github.io/zola-docs/).
 
 Before using the theme, you need to install [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ v0.18.0.
 
-```sh
+```shell
 # 1. Clone the repo
 git clone git@github.com:semanticdata/zola-docs.git
 

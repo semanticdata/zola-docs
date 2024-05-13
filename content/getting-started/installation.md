@@ -10,7 +10,7 @@ Zola provides pre-built binaries for MacOS, Linux and Windows on the
 
 Zola is available on [Brew](https://brew.sh):
 
-```sh
+```shell
 $ brew install zola
 ```
 
@@ -18,7 +18,7 @@ $ brew install zola
 
 Zola is available in the official Arch Linux repositories.
 
-```sh
+```shell
 $ pacman -S zola
 ```
 
@@ -26,7 +26,7 @@ $ pacman -S zola
 
 Zola has been available in the official repositories since Fedora 29.
 
-```sh
+```shell
 $ sudo dnf install zola
 ```
 
@@ -34,7 +34,7 @@ $ sudo dnf install zola
 
 Zola is available in the official Void Linux repositories.
 
-```sh
+```shell
 $ sudo xbps-install zola
 ```
 
@@ -42,7 +42,7 @@ $ sudo xbps-install zola
 
 Zola is available in the official package repository.
 
-```sh
+```shell
 $ pkg install zola
 ```
 
@@ -50,7 +50,7 @@ $ pkg install zola
 
 Zola is available in the official package repository.
 
-```sh
+```shell
 $ doas pkg_add zola
 ```
 
@@ -58,7 +58,7 @@ $ doas pkg_add zola
 
 Zola is available on snapcraft:
 
-```sh
+```shell
 $ snap install --edge zola
 ```
 
@@ -66,13 +66,13 @@ $ snap install --edge zola
 
 Zola is available on [Scoop](http://scoop.sh):
 
-```sh
+```shell
 $ scoop install zola
 ```
 
 and [Chocolatey](https://chocolatey.org/):
 
-```sh
+```shell
 $ choco install zola
 ```
 
@@ -105,7 +105,7 @@ installed. You will also need to meet additional dependencies to compile [libsas
 
 From a terminal, you can now run the following command:
 
-```sh
+```shell
 $ cargo build --release
 ```
 

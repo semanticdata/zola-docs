@@ -21,7 +21,7 @@ Unlike some SSGs, Zola makes no assumptions regarding the structure of your site
 
 Please see the detailed [installation instructions for your platform](@/getting-started/installation.md). With Zola installed, let's initialize our site:
 
-```sh
+```shell
 $ zola init myblog
 ```
 
@@ -36,7 +36,7 @@ You will be asked a few questions.
 
 For our blog, let's accept the default values (i.e., press Enter for each question). We now have a `myblog` directory with the following structure:
 
-```sh
+```shell
 ├── config.toml
 ├── content
 ├── sass
@@ -47,7 +47,7 @@ For our blog, let's accept the default values (i.e., press Enter for each questi
 
 Let's start the Zola development server with:
 
-```sh
+```shell
 $ zola serve
 Building site...
 -> Creating 0 pages (0 orphan), 0 sections, and processing 0 images
@@ -95,7 +95,7 @@ This tells Zola that `index.html` extends our `base.html` file and replaces the 
 
 Now let's add some content. We'll start by making a `blog` subdirectory in the `content` directory and creating an `_index.md` file inside it. This file tells Zola that `blog` is a [section](@/content/section.md), which is how content is categorized in Zola.
 
-```sh
+```shell
 ├── content
 │   └── blog
 │       └── _index.md

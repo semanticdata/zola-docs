@@ -63,7 +63,7 @@ For a command-line manual deploy, follow these steps:
     and SITE_NAME.
 5.  (Optional) delete the zip folder.
 
-```sh
+```shell
 curl -H "Content-Type: application/zip" \
      -H "Authorization: Bearer PERSONAL_ACCESS_TOKEN_FROM_STEP_1" \
      --data-binary "@FILE_NAME.zip" \
