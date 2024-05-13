@@ -11,12 +11,32 @@ html {
 }
 
 body {
-  // margin: $baseline 0;
+  margin: $space-sm;
   font-size: $font-size;
   font-family: $font-family;
   line-height: $line-height;
   background: $background;
   color: $color;
+}
+
+main {
+  flex-flow: row nowrap;
+  animation: fade-in 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  max-height: calc(100vh - $space-lg);
+  padding: $space-md;
+  width: $nav-width;
+  position: sticky;
+  top: $space-sm;
+}
+
+article {
+  padding: $space-md;
+  max-width: $page-width;
 }
 
 @keyframes fade-in {
@@ -68,6 +88,24 @@ h4 {
   }
 }
 
+.logo {
+  padding-block: $space-md;
+}
+.site-title {
+  display: inline-flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+// Blockquote
+blockquote {
+  border-left: $quote-border;
+  background-color: $quote-bg;
+  padding: $space-xs $space-lg;
+  margin-inline: $space-lg;
+}
+
+// Table
 table {
   width: 100%;
   margin: $space-lg auto;
@@ -83,10 +121,7 @@ table td {
   border: 1px solid $color;
 }
 
-// [class^="language-"] {
-//   padding: $space-sm;
-//   overflow-x: auto;
-// }
+// Code
 pre {
   border-radius: 0.2rem;
   padding: $space-md;
@@ -138,18 +173,11 @@ pre:hover .copy-code-button {
   display: block;
 }
 
-nav {
-  img {
-    // width: 128px;
-  }
-
-  h1 {
-    // line-height: 1;
-  }
-}
-
+// Table of Contents
 #toc {
-  // font-size: 80%;
+  font-size: 90%;
+  margin-inline-start: $space-sm;
+  padding-inline-start: $space-sm;
 
   li {
     color: $color;
@@ -164,22 +192,17 @@ nav {
   }
 }
 
-main {
-  flex-flow: row nowrap;
-  animation: fade-in 0.4s ease-in-out;
-}
+// #release {
+//   text-align: left;
+//   margin: $baseline 0;
 
-#release {
-  text-align: left;
-  margin: $baseline 0;
-
-  &::before {
-    display: inline-block;
-    content: "\EE2E";
-    font-family: "FabricMDL2Icons";
-    margin-right: calc(#{$baseline} / 8);
-  }
-}
+//   &::before {
+//     display: inline-block;
+//     content: "\EE2E";
+//     font-family: "FabricMDL2Icons";
+//     margin-right: calc(#{$baseline} / 8);
+//   }
+// }
 
 @keyframes slideIn {
   0% {
@@ -213,6 +236,8 @@ nav label {
 .subtree {
   overflow: hidden;
   transition: overflow 0.2s ease-in-out;
+  margin: 0;
+  padding-inline-start: $space-sm;
 }
 
 .tree-toggle-label {
@@ -282,27 +307,19 @@ nav label {
   font-weight: bold;
 }
 
-article {
-  // width: calc(100% - (#{$baseline} * 4 + 40rem));
-  // margin-left: calc(#{$baseline} * 2);
-
-  img {
-    // max-width: 100%;
-  }
-}
-
 #mobile {
   display: none;
 }
 
+// Media Queries
 @media screen and (max-width: $breakpoint-lg) {
   main {
     flex-flow: column nowrap;
   }
 
   nav {
-    // position: relative;
-    // height: auto;
+    position: relative;
+    height: auto;
   }
 
   article {

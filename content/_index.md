@@ -50,7 +50,7 @@ title = "index"
       sagittis mollis, tellus est malesuada tellus, at luctus turpis
       elit sit amet quam. Vivamus pretium ornare est.
     </p>
-    <cite>#cite <a href="#cite">#cite</a></cite>
+    <!-- <cite>#cite <a href="#cite">#cite</a></cite> -->
   </blockquote>
   <p>
     Pellentesque habitant morbi tristique senectus et netus et
