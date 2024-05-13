@@ -10,7 +10,7 @@ Zola will look up the following files in the `templates` directory:
 
 First, `TaxonomyTerm` has the following fields:
 
-```ts
+```typescript
 name: String;
 slug: String;
 permalink: String;
@@ -19,7 +19,7 @@ pages: Array<Page>;
 
 and `TaxonomyConfig` has the following fields:
 
-```ts
+```typescript
 name: String,
 paginate_by: Number?;
 paginate_path: String?;
@@ -31,7 +31,7 @@ lang: String;
 
 This template is never paginated and therefore gets the following variables in all cases.
 
-```ts
+```typescript
 // The site config
 config: Config;
 // The data of the taxonomy, from the config
@@ -48,7 +48,7 @@ lang: String;
 
 ### Single term (`single.html`)
 
-```ts
+```typescript
 // The site config
 config: Config;
 // The data of the taxonomy, from the config

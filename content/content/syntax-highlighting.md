@@ -9,7 +9,7 @@ need to enable it in the configuration
 Once this is done, Zola will automatically highlight all code blocks
 in your content. A code block in Markdown looks like the following:
 
-````md
+````markdown
 ```rust
 let highlight = true;
 ```

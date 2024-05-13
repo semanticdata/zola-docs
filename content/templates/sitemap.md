@@ -22,7 +22,7 @@ The `sitemap.xml` template gets a single variable:
 
 A `SitemapEntry` has the following fields:
 
-```ts
+```typescript
 permalink: String;
 updated: String?;
 extra: Hashmap<String, Any>?;

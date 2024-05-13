@@ -52,7 +52,7 @@ In addition to the standard `index.html`, `section.html` and `page.html` templat
 you may also create custom templates by creating an `.html` file in the `templates`
 directory. These custom templates will not be used by default. Instead, a custom template will _only_ be used if you apply it by setting the `template` front-matter variable to the path for that template (or if you `include` it in another template that is applied). For example, if you created a custom template for your site's About page called `about.html`, you could apply it to your `about.md` page by including the following front matter in your `about.md` page:
 
-```md
+```markdown
 +++
 title = "About Us"
 template = "about.html"
@@ -203,7 +203,7 @@ Gets the whole taxonomy of a specific kind.
 
 The type of the output is:
 
-```ts
+```typescript
 kind: TaxonomyConfig;
 items: Array<TaxonomyTerm>;
 ```
@@ -268,7 +268,7 @@ The `bibtex` format loads data into a structure matching the format used by the
 [nom-bibtex crate](https://crates.io/crates/nom-bibtex). The following is an example of data
 in bibtex format:
 
-```
+```bibtex
 @preamble{"A bibtex preamble" # " this is."}
 
 @Comment{

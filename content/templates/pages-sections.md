@@ -13,7 +13,7 @@ or render the built-in template (a blank page).
 Whichever template you decide to render, you will get a `page` variable in your template
 with the following fields:
 
-```ts
+```typescript
 // The HTML output of the Markdown content
 content: String;
 title: String?;
@@ -70,7 +70,7 @@ one, it will render the built-in template (a blank page).
 Whichever template you decide to render, you will get a `section` variable in your template
 with the following fields:
 
-```ts
+```typescript
 // The HTML output of the Markdown content
 content: String;
 title: String?;
@@ -112,7 +112,7 @@ translations: Array<TranslatedContent>;
 Both page and section templates have a `toc` variable that corresponds to an array of `Header`.
 A `Header` has the following fields:
 
-```ts
+```typescript
 // The hX level
 level: 1 | 2 | 3 | 4 | 5 | 6;
 // The generated slug id
@@ -131,7 +131,7 @@ Both pages and sections have a `translations` field that corresponds to an array
 site is not using multiple languages, this will always be an empty array.
 `TranslatedContent` has the following fields:
 
-```ts
+```typescript
 // The language code for that content, empty if it is the default language
 lang: String?;
 // The title of that content if there is one

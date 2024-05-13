@@ -95,7 +95,7 @@ should not be used as argument names in shortcodes.
 Simply call the shortcode as if it was a Tera function in a variable block. All the examples below are valid
 calls of the YouTube shortcode.
 
-```md
+```markdown
 Here is a YouTube video:
 
 {{/* youtube(id="dQw4w9WgXcQ") */}}
@@ -121,7 +121,7 @@ Let's imagine that we have the following shortcode `quote.html` template:
 
 We could use it in our Markdown file like so:
 
-```md
+```markdown
 As someone said:
 
 {%/* quote(author="Vincent") */%}
@@ -147,7 +147,7 @@ been invoked in a Markdown file. Given a shortcode `true_statement.html` templat
 
 It could be used in our Markdown as follows:
 
-```md
+```markdown
 {{/* true_statement(value=1) */}}
 {{/* true_statement(value=2) */}}
 ```

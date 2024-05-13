@@ -12,7 +12,7 @@ If `slugify.paths` is set to `"off"`, no modifications are made, and you may be 
 A number is appended at the end if the slug already exists for that article
 For example:
 
-```md
+```markdown
 # Something exciting! <- something-exciting
 
 ## Example code <- example-code
@@ -24,7 +24,7 @@ For example:
 
 You can also manually specify an id with a `{#…}` suffix on the heading line:
 
-```md
+```markdown
 # Something manual! {#manual}
 ```
 

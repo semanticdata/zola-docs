@@ -27,7 +27,7 @@ $ zola init myblog
 
 You will be asked a few questions.
 
-```
+```shell
 > What is the URL of your site? (https://example.com):
 > Do you want to enable Sass compilation? [Y/n]:
 > Do you want to enable syntax highlighting? [y/N]:
@@ -103,7 +103,7 @@ Now let's add some content. We'll start by making a `blog` subdirectory in the `
 
 In the `_index.md` file, we'll set the following variables in [TOML](https://github.com/toml-lang/toml) format:
 
-```md
+```markdown
 +++
 title = "List of blog posts"
 sort_by = "date"
@@ -143,7 +143,7 @@ If you go to <http://127.0.0.1:1111/blog/>, you will see the section page for `b
 
 In the `blog` directory, create a file called `first.md` with the following contents:
 
-```md
+```markdown
 +++
 title = "My first post"
 date = 2019-11-27
@@ -167,7 +167,7 @@ We now need to make the `blog-page.html` template. In the `templates` directory,
 
 This should start to look familiar. If you now go back to our blog list page at <http://127.0.0.1:1111/blog/>, you should see our lonely post. Let's add another. In the `content/blog` directory, let's create the file `second.md` with the contents:
 
-```md
+```markdown
 +++
 title = "My second post"
 date = 2019-11-28

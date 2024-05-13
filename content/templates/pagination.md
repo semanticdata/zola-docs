@@ -8,7 +8,7 @@ Two things can get paginated: a section and a taxonomy term.
 Both kinds get a `paginator` variable of the `Pager` type, on top of the common variables mentioned in the
 [overview page](@/templates/overview.md):
 
-```ts
+```typescript
 // How many items per pager
 paginate_by: Number;
 // The base URL for the pagination: section permalink + pagination path
