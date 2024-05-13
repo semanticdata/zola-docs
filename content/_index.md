@@ -297,32 +297,30 @@ title = "index"
   </div>
 </div>
 <hr />
-<div>
-  <p id="section-code-blocks">
-    <strong>Code blocks:</strong>
-  </p>
-  <pre><code>
-    def hello_world():
-    print("Hello world")
-  </code></pre>
-  <pre><code>
-    SELECT *
-    FROM `hello_world`
-    WHERE `foo` = 'bar';
-  </code></pre>
-  <pre><code>
-    &lt;h1&gt;Hello world&lt;/h1&gt;
-    &lt;p&gt;Vestibulum id ligula porta felis euismod semper.&lt;/p&gt;
-  </code></pre>
-  <pre><code>
-    .hello-world &lbrace;
-      background-color: #663399;
-      display: block;
-      height: 10vh;
-      width: 4em;
-    &rbrace;
-  </code></pre>
-</div>
+
+```javascript
+def hello_world():
+print("Hello world")
+```
+
+```css
+.hello-world {
+  background-color: #663399;
+  display: block;
+  height: 10vh;
+  width: 4em;
+}
+```
+
+```toml
+[build]
+# This assumes that the Zola site is in a docs folder. If it isn't, you don't need
+# to have a `base` variable but you do need the `publish` and `command` variables.
+base    = "docs"
+publish = "docs/public"
+command = "zola build"
+```
+
 <hr />
 <small>
   Source:
