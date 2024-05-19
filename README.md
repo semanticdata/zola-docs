@@ -1,11 +1,11 @@
 <div align="center">
 <h1>📂 Zola Docs</h1>
 
-<img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-minimal" />
-<img src="https://img.shields.io/github/repo-size/semanticdata/zola-minimal" />
-<img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-minimal" />
-<img src="https://img.shields.io/github/last-commit/semanticdata/zola-minimal" />
-<img src="https://img.shields.io/website/https/zola-minimal.vercel.app.svg" />
+<img src="https://img.shields.io/github/languages/code-size/semanticdata/zola-docs" />
+<img src="https://img.shields.io/github/repo-size/semanticdata/zola-docs" />
+<img src="https://img.shields.io/github/commit-activity/t/semanticdata/zola-docs" />
+<img src="https://img.shields.io/github/last-commit/semanticdata/zola-docs" />
+<img src="https://img.shields.io/website/https/semanticdata.github.io/zola-docs.svg" />
 
 Zola Docs is an easy way to create documentation for your project.
 
@@ -42,7 +42,7 @@ Adding custom CSS is as easy as adding your styles to [sass/_custom.scss](sass/_
 
 ## 🚩 Reporting Issues
 
-We use GitHub Issues as the official bug tracker for **Minimal**. Please search [existing issues](https://github.com/semanticdata/zola-minimal/issues). It’s possible someone has already reported the same problem. If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-minimal/issues/new).
+We use GitHub Issues as the official bug tracker for **Zola Docs**. Please search [existing issues](https://github.com/semanticdata/zola-docs/issues). It’s possible someone has already reported the same problem. If your problem or idea is not addressed yet, [open a new issue](https://github.com/semanticdata/zola-docs/issues/new).
 
 ## 📝 Notes on provided configuration options
 
