@@ -9,9 +9,11 @@
 
 Zola Docs is an easy way to create documentation for your project.
 
-Check out the [demo](https://semanticdata.github.io/zola-docs/).
-
+<a href="https://semanticdata.github.io/zola-docs/">
+<img src="https://img.shields.io/badge/Check out the Demo-F0E68C?style=for-the-badge&link=https://semanticdata.github.io/zola-docs/" alt="demo" height="32px"; /></a>
 </div>
+
+<br />
 
 ![theme screenshot](screenshot.png)
 
@@ -19,17 +21,22 @@ Check out the [demo](https://semanticdata.github.io/zola-docs/).
 
 Before using the theme, you need to install [Zola](https://www.getzola.org/documentation/getting-started/installation/) ≥ v0.18.0.
 
-```shell
-# 1. Clone the repo
+### 1. Clone the repo
+
+```sh
 git clone git@github.com:semanticdata/zola-docs.git
+```
 
-# 2. Change directory into clone
+### 2. Change directory into clone
+
+```sh
 cd zola-docs
+```
 
-# 3. Serve the site locally
+### 3. Serve the site locally
+
+```sh
 zola serve
-
-# 4. Open http://127.0.0.1:1111/ in the browser
 ```
 
 For more detailed instructions, visit the [Documentation](https://www.getzola.org/documentation/themes/installing-and-using-themes/) page about installing and using themes.
